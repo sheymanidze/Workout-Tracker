@@ -14,7 +14,6 @@ router.get('/api/workouts/range', (req, res) => {
       }
     ])
     .then((allWorkouts) => {
-      console.log(allWorkouts)
       res.json(allWorkouts)
 
     })
@@ -36,7 +35,6 @@ router.get("/api/workouts", (req, res) => {
       }
     ])
     .then((lastWorkout) => {
-      console.log(lastWorkout)
       res.json(lastWorkout);
     })
     .catch((err) => {
