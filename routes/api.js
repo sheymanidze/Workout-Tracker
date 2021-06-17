@@ -26,6 +26,17 @@ router.get("/api/workouts", (req, res) => {
 });
 
 
+//Create workout
+router.post("/api/workouts", (req, res) => {
+  db.Workout.create(req.body)
+    .then((newWorkout) => {
+      res.json(newWorkout)
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+      console.log(err);
+    });
+});
 
 
 module.exports = router;
