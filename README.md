@@ -49,7 +49,17 @@
 
  # Screenshots
 
-   ![]()
+  ### Fitness Tracker main page
+   <img src="./public/img/fitness-tracker.png" alt="Fitness Tracker" width = "400"/>
+
+   ### Dashboard page
+   <img src="./public/img/dashboard.png" alt="Workouts stats" width = "400"/>
+
+  ### Resistance type of workout form
+   <img src="./public/img/resistance.png" alt="Resistance workout form" width = "400"/>
+
+   ### Cardio type of workout form
+   <img src="./public/img/cardio.png" alt="Cardio workout form" width = "400"/>
 
 
  # Future Developments
