@@ -1,12 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
-//const logger = require('morgan');
+const logger = require('morgan');
 
 const PORT = process.env.PORT || 3001
 
 const app = express();
 
-//app.use(logger("dev"));
+app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -23,12 +23,12 @@ mongoose.connect(
 );
 
 
-const apiRouter = app.use(require("./routes/api.js"));
+// const apiRouter = app.use(require("./routes/api.js"));
 
-const htmlRouter = app.use(require("./routes/html.js"));
+// const htmlRouter = app.use(require("./routes/html.js"));
 
-app.use(apiRouter);
-app.use(htmlRouter);
+// app.use(apiRouter);
+// app.use(htmlRouter);
 
 
 
